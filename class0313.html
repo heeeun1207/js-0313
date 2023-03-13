@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const poketmon = ["피카츄","라이츄","파이리","꼬부기"];  
+    console.log(poketmon.length);
+    console.log(poketmon[0]); 
+    // 배열 첫번째 -> 피카츄
+    console.log(poketmon[poketmon.length-1]); 
+    // 배열 마지막 -> 꼬부기
+    poketmon.push("이상해씨");
+    //배열마지막에 요소 추가 
+    console.log(poketmon);
+    console.log(poketmon[poketmon.length-1]);  // 이상해씨
+
+    //배열 요소 삭제
+    poketmon.pop();
+    console.log(poketmon);
+
+    //배열 요소 추가 (앞에서부터)
+    poketmon.unshift("리자몽");
+    console.log(poketmon);
+
+    //배열 요소 삭제 (앞에서부터)
+    poketmon.shift();
+    console.log(poketmon);
+    
+    //배열의 인덱스 2~3까지 출력  , 0번째 매개변수값부터 , 1번째 매개변수 값 미만인것들을 포함
+    console.log(poketmon.slice(2,4));
+  
+    
+  
+
+  </script>
+</body>
+</html>
